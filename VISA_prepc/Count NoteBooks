@@ -1,0 +1,7 @@
+def count_notebooks(N):
+    pages_per_kg = 1000
+    pages_per_notebook = 100
+    total_pages = N*pages_per_kg
+    return total_pages//pages_per_notebook
+N=int(input())
+print(count_notebooks(N))
