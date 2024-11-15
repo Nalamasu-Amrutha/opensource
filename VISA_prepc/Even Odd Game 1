@@ -1,0 +1,10 @@
+def even_odd_game(N):
+    sum_of_digits = 0
+    for digit in str(N):
+        sum_of_digits += int(digit)
+    if sum_of_digits % 2 == 0:
+        return "Vignesh"
+    else:
+        return "Charan"
+N = int(input())
+print(even_odd_game(N))
