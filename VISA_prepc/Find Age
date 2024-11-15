@@ -1,0 +1,11 @@
+def find_v_age(x):
+    v_current_age= 10
+    c_current_age= 25
+    age_difference = c_current_age - v_current_age
+    return x-age_difference
+if __name__ == "__main__":
+    x=int(input())
+    if 1 <=x<=100:
+        print(find_v_age(x))
+    else:
+        print("Invalid input. X should be between 1 and 100.")
