@@ -1,0 +1,10 @@
+def on_time_arrival(T):
+    for _ in range(T):
+        X = int(input())
+        if X >= 30:
+            print("YES")
+        else:
+            print("NO")
+if __name__ == "__main__":
+    T = int(input())
+    on_time_arrival(T)
