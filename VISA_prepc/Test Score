@@ -1,0 +1,7 @@
+def is_achievable(N,x,Y):
+    if Y%X == 0 and Y//X <= N:
+        return "YES"
+    else:
+        return "NO"
+N,X,Y = map(int,input().split())
+print(is_achievable(N,X,Y))
