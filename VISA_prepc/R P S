@@ -1,0 +1,9 @@
+def rps_winner(v,c):
+    if v==c:
+        return "NULL"
+    elif(v=="R" and C=="P") or (v=="P" and c=="S") or (v=="S" and c=="R"):
+        return "Charan"
+    else:
+        return "Vignesh"
+v,c = input().split()
+print(rps_winner(v,c))
