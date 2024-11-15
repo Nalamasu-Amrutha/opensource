@@ -1,0 +1,8 @@
+def min_planes_to_buy(x: int, N: int) -> int:
+    capacity_per_plane = 100
+    total_capacity = x * capacity_per_plane
+    planes_needed = (N + capacity_per_plane - 1) // capacity_per_plane
+    return max(0, planes_needed - x)
+if __name__ == "__main__":
+    x, N = map(int, input().split())
+    print(min_planes_to_buy(x, N))
