@@ -1,0 +1,7 @@
+x,y,z = map(int,input().split())
+total_min=x*y
+available_min=z*24*60
+if total_min<=available_min:
+    print("YES")
+else:
+    print("NO")
